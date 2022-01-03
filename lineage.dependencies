@@ -1,0 +1,48 @@
+  {
+    "remote":       "github",
+    "repository":   "ArrowOS-Devices/android_device_xiaomi_extras",
+    "target_path":  "device/xiaomi/extras",
+    "revision":     "arrow-12.0"
+  },
+  {
+    "remote":       "github",
+    "repository":   "ArrowOS-Devices/android_hardware_xiaomi",
+    "target_path":  "hardware/xiaomi",
+    "revision":     "arrow-12.0"
+  },
+  {
+    "remote":       "github",
+    "repository":   "XayahSuSuSu/kernel_xiaomi_cas",
+    "target_path":  "kernel/xiaomi/cas",
+    "revision":     "arrow-12.0"
+  },
+  {
+    "remote":       "github",
+    "repository":   "ArrowOS-Devices/android_packages_apps_GcamGOPrebuilt",
+    "target_path":  "packages/apps/GcamGOPrebuilt",
+    "revision":     "arrow-12.0"
+  },
+  {
+    "remote":       "github",
+    "repository":   "PixelExperience/hardware_qcom-caf_sm8250_audio",
+    "target_path":  "hardware/qcom-caf/audio",
+    "revision":     "twelve"
+  },
+  {
+    "remote":       "github",
+    "repository":   "PixelExperience/hardware_qcom-caf_sm8250_display",
+    "target_path":  "hardware/qcom-caf/display",
+    "revision":     "twelve"
+  },
+  {
+    "remote":       "github",
+    "repository":   "PixelExperience/hardware_qcom-caf_sm8250_media",
+    "target_path":  "hardware/qcom-caf/media",
+    "revision":     "twelve"
+  },
+  {
+    "repository":   "Xayah/vendor_xiaomi_cas",
+    "target_path":  "vendor/xiaomi/cas",
+    "revision":     "arrow-12.0-dev"
+  }
+]
