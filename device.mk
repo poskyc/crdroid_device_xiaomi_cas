@@ -22,6 +22,13 @@ $(call inherit-product, vendor/xiaomi/cas/cas-vendor.mk)
 # HIDL HALs
 $(call inherit-product, $(LOCAL_PATH)/hidl.mk)
 
+# Octavi
+TARGET_BOARD_PLATFORM := kona
+BOARD_USES_QCOM_HARDWARE := true
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/sm8250/audio
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/sm8120/display
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/sm8250/media
+
 # Platform
 PRODUCT_BOARD_PLATFORM := kona
 
@@ -287,7 +294,8 @@ PRODUCT_COPY_FILES += \
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/xiaomi
+    hardware/xiaomi \
+    hardware/qcom-caf/sm8250
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -306,7 +314,9 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-system
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-system 
+    
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
